@@ -1,4 +1,4 @@
-# 💻 Projetos e Desafios
+# 💻 Projetos e desafios
 
 Neste repositório você encontrará todos os Desafios de Projeto desenvolvidos ao longo do Bootcamp Santander Code Girls 2025.
 
