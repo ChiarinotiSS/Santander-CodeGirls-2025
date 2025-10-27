@@ -2,43 +2,43 @@
 
 ---
 
-## O que é?
+## O que é o AWS CloudFormation?
 
-O AWS CloudFormation é uma ferramenta que permite criar e gerenciar toda a infraestrutura de forma automatizada por meio de modelos escritos em YAML ou JSON. Em vez de configurar manualmente cada recurso na nuvem, como instâncias EC2, redes VPC, buckets S3 ou grupos de segurança, o CloudFormation permite que tudo seja descrito em um único arquivo. 
+O AWS CloudFormation é uma ferramenta que permite definir, criar e gerenciar a infraestrutura da nuvem de forma automatizada através de arquivos escritos em YAML ou JSON. Ao invés de configurar manualmente cada recurso, como instâncias EC2, redes VPC, buckets S3 ou grupos de segurança, você consegue descrever todos esses elementos em um único arquivo.
 
-Essa abordagem transforma a infraestrutura em código versionável e reproduzível, o que facilita auditorias, manutenção e colaboração entre equipes. Assim, o CloudFormation consolida o conceito de Infraestrutura como Código (IaC), garantindo padronização, agilidade e consistência no provisionamento de ambientes AWS.
-
----
-
-## Criando uma Stack com AWS CloudFormation
-
-O AWS CloudFormation permite automatizar a criação e gerenciamento de toda a infraestrutura na nuvem por meio de código, garantindo padronização, automação e controle total sobre os recursos. Ao criar uma Stack, é possível agrupar recursos relacionados e gerenciar seu ciclo de vida de forma organizada e reproduzível.
-
-Durante meu aprendizado, explorei o processo de criação de uma Stack, documentando e validando cada etapa antes de realizar qualquer deploy real. O fluxo básico que segui incluiu:
-
-### 1. Planejamento
-Identificação dos recursos necessários, como VPCs, sub-redes, EC2, RDS, S3 e Security Groups, além das dependências entre eles.
-
-### 2. Criação do template (YAML/JSON)
-Estruturação de Parameters, Mappings, Resources, Outputs e Conditions para que o template fosse parametrizável, reutilizável e flexível.
-
-### 3. Validação do template
-Checagem da sintaxe e lógica usando o console ou ferramentas locais, evitando erros antes do deploy.
-
-### 4. Preparação para criação da Stack
-Revisão de parâmetros, definição de tags e escolha da role de execução. O processo no console ou via CLI envolve upload do template > preenchimento de parâmetros > revisão > criação.
-
-### 5. Monitoramento e acompanhamento
-Observação de eventos de criação no CloudFormation e análise de logs no CloudWatch para confirmar sucesso ou identificar problemas.
-
-### 6. Atualização controlada (Change Sets)
-Geração de Change Sets para revisar alterações antes de aplicá-las, reduzindo riscos em ambientes de produção.
-
-### 7. Rollback e exclusão
-Entendimento do rollback automático em caso de falhas e exclusão segura da Stack quando necessário.
+Essa metodologia transforma a infraestrutura em código versionável, tornando-a mais fácil de auditar, manter e compartilhar entre equipes. O CloudFormation é, portanto, um exemplo prático do conceito de Infraestrutura como Código (IaC), oferecendo padronização, agilidade e consistência na criação e gestão de ambientes AWS.
 
 ---
 
-## Benefícios de uma Stack
+## Criando uma Stack no CloudFormation
 
-Uma Stack permite gerenciar todos os recursos relacionados de forma centralizada, criar e atualizar ambientes de maneira controlada e reproduzir facilmente ambientes idênticos, como desenvolvimento, teste e produção. Além disso, possibilita versionar templates no Git, facilitando auditoria e revisão de mudanças, automatizar deploys integrados a pipelines de CI/CD, garantir consistência entre ambientes e aplicar políticas de governança, reduzindo significativamente erros manuais.
+Com o CloudFormation, é possível automatizar a criação e gerenciamento de recursos na nuvem, garantindo controle total e padronização. A criação de uma Stack permite agrupar recursos relacionados e gerenciar seu ciclo de vida de forma organizada e replicável.
+
+Durante meus estudos, segui um processo estruturado para criar uma Stack, documentando cada etapa e validando antes de executar qualquer deploy real. O fluxo básico incluído foi:
+
+**01.** Planejamento
+- Mapeamento dos elementos necessários, como VPCs, sub-redes, instâncias EC2, bancos de dados RDS, buckets S3 e Security Groups, considerando também as dependências entre eles.
+
+**02.** Criação do template
+- Estruturação de Parameters, Mappings, Resources, Outputs e Conditions, garantindo que o template fosse reutilizável, flexível e parametrizável.
+
+**03.** Validação do template
+- Verificação da sintaxe e lógica do arquivo usando o console da AWS ou ferramentas locais, prevenindo erros antes do deploy.
+
+**04.** Preparação para criar a Stack
+- Revisão de parâmetros, definição de tags e escolha da role de execução. No console ou via CLI, o processo envolve: upload do template > preenchimento de parâmetros > revisão > criação.
+
+**05.** Monitoramento da criação
+- Acompanhamento dos eventos no CloudFormation e análise de logs no CloudWatch para confirmar se a Stack foi criada corretamente ou para identificar possíveis falhas.
+
+**06.** Atualizações controladas com Change Sets
+- Antes de aplicar alterações em produção, os Change Sets permitem revisar modificações e reduzir riscos.
+
+**07.** Rollback e exclusão da Stack
+- Compreensão do rollback automático em caso de erros e execução de exclusão segura da Stack quando necessário.
+
+---
+
+## Vantagens de utilizar Stacks
+
+Ao utilizar uma Stack, é possível centralizar a gestão de recursos, criar e atualizar ambientes de forma controlada e reproduzir facilmente configurações idênticas para desenvolvimento, teste e produção. Além disso, os templates podem ser versionados no Git, facilitando auditorias e revisões, integrados a pipelines de CI/CD, garantindo consistência entre ambientes e aplicando políticas de governança. Tudo isso reduz consideravelmente os erros manuais e aumenta a confiabilidade das operações na nuvem.
