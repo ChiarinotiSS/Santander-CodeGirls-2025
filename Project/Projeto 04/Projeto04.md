@@ -49,7 +49,7 @@ Em relação à linguagem, o CloudFormation utiliza YAML ou JSON, já o Terrafor
 No CloudFormation, o gerenciamento de estado é feito automaticamente pela AWS, enquanto no Terraform o estado precisa ser armazenado localmente ou em repositórios remotos.
 
 O CloudFormation oferece integração nativa e mais profunda com os serviços da AWS, e o Terraform tem boa compatibilidade, mas através de APIs externas.
-Ambos são gratuitos — no CloudFormation, você paga apenas pelos recursos criados — e quanto à curva de aprendizado, o CloudFormation tende a ser mais simples para quem utiliza apenas AWS, enquanto o Terraform é mais flexível, porém exige mais configuração.
+Ambos são gratuitos, no CloudFormation, você paga apenas pelos recursos criados, e quanto à curva de aprendizado, o CloudFormation tende a ser mais simples para quem utiliza apenas AWS, enquanto o Terraform é mais flexível, porém exige mais configuração.
 
 ---
 
