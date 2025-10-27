@@ -5,7 +5,7 @@
 ## Conceito
 
 O AWS CloudFormation é um serviço da Amazon Web Services voltado para a criação e administração de ambientes em nuvem utilizando infraestrutura como código.
-Com ele, toda a configuração de recursos — como instâncias EC2, VPCs, bancos de dados e funções Lambda — é descrita em arquivos YAML ou JSON, permitindo que a AWS automatize o provisionamento e o gerenciamento de forma padronizada.
+Com ele, toda a configuração de recursos, como instâncias EC2, VPCs, bancos de dados e funções Lambda, é descrita em arquivos YAML ou JSON, permitindo que a AWS automatize o provisionamento e o gerenciamento de forma padronizada.
 
 ---
 
