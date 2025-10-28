@@ -2,20 +2,31 @@
 
 ---
 
-## Descrição
-Este projeto foi desenvolvido durante o bootcamp com o objetivo de representar graficamente a arquitetura do sistema Gerador de Relatórios, utilizando o Draw.io.
-A proposta consiste em demonstrar a integração entre os serviços Amazon EC2, Amazon S3 e AWS Lambda, simulando o fluxo de processamento e geração automatizada de relatórios na nuvem.
-
----
-
 ## Descrição do Desafio
-Este laboratório tem como objetivo consolidar os conhecimentos em **gerenciamento de instâncias EC2** na AWS.  
-O entregável consiste em um repositório organizado contendo anotações, diagramas e insights obtidos durante a prática.
+Este projeto foi desenvolvido como parte do bootcamp, tendo como foco a criação de um diagrama arquitetural no Draw.io para representar o funcionamento do Gerador de Relatórios na AWS.
+A proposta do desafio foi aplicar na prática os conceitos de gerenciamento de instâncias EC2, armazenamento em nuvem com o Amazon S3 e automação de tarefas com o AWS Lambda, consolidando o aprendizado sobre os principais serviços da Amazon Web Services.
+
+A arquitetura criada ilustra como esses serviços se integram para processar dados e gerar relatórios automaticamente, simulando um fluxo real dentro do ecossistema AWS.
+O resultado é um repositório que documenta de forma visual e organizada o funcionamento desse sistema, servindo como base para estudos e futuras implementações.
 
 ---
 
-## Objetivo
-Consolidar os conhecimentos sobre instâncias EC2, armazenamento em nuvem e funções serverless, aplicando conceitos teóricos em um modelo visual e prático de arquitetura AWS.
+## Visão Geral dos Serviços Utilizados
+
+### Amazon EC2 (Elastic Compute Cloud)
+
+O Amazon EC2 é um serviço de computação em nuvem que permite criar e gerenciar instâncias virtuais (servidores) para hospedar aplicações, executar processos e realizar tarefas sob demanda.
+No contexto deste projeto, a EC2 representa o componente responsável pela execução principal das operações de processamento dentro do sistema Gerador de Relatórios.
+
+### Amazon S3 (Simple Storage Service)
+
+O Amazon S3 é um serviço de armazenamento de objetos altamente escalável e seguro, utilizado para guardar arquivos, dados e backups.
+No projeto, ele atua como o repositório central onde os arquivos e dados necessários para gerar os relatórios são armazenados e organizados.
+
+### AWS Lambda
+
+O AWS Lambda permite executar funções de forma automática e sem servidor (serverless), em resposta a eventos dentro da AWS.
+No Gerador de Relatórios, ele é o componente que automatiza o fluxo de processamento, sendo acionado sempre que um novo arquivo é enviado ao S3, gerando relatórios de forma dinâmica e eficiente.
 
 ---
 
@@ -37,7 +48,7 @@ O diagrama desenvolvido representa:
 
 ---
 
-## Tecnologias Utilizadas
+### Tecnologias Utilizadas
 
 **Draw.io** – Criação do diagrama arquitetural
 **Amazon EC2** – Hospedagem e execução de processos
