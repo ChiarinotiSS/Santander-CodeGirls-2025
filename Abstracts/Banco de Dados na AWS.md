@@ -52,6 +52,6 @@ O Amazon RDS é um serviço gerenciado que facilita a criação, configuração 
 
 ---
 
->🫐Colinha🫐
-> RDS > bancos relacionais gerenciados (Aurora, MySQL, PostgreSQL, SQL Server, Oracle, MariaDB).
-> DynamoDB > banco NoSQL, rápido, flexível e altamente escalável
+> 🫐Colinha🫐
+> - RDS > bancos relacionais gerenciados (Aurora, MySQL, PostgreSQL, SQL Server, Oracle, MariaDB).
+> - DynamoDB > banco NoSQL, rápido, flexível e altamente escalável
