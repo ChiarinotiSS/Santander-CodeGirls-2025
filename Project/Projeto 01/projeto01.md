@@ -50,10 +50,10 @@ O diagrama desenvolvido representa:
 
 ### Tecnologias Utilizadas
 
-**Draw.io** – Criação do diagrama arquitetural
-**Amazon EC2** – Hospedagem e execução de processos
-**Amazon S3** – Armazenamento de arquivos e dados
-**AWS Lambda** – Automação e processamento sem servidor
+- **Draw.io** – Criação do diagrama arquitetural
+- **Amazon EC2** – Hospedagem e execução de processos
+- **Amazon S3** – Armazenamento de arquivos e dados
+- **AWS Lambda** – Automação e processamento sem servidor
 
 ---
 
