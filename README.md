@@ -8,7 +8,7 @@ Aqui estão reunidos todos os resumos, anotações e projetos práticos que dese
 
 📚 [Abstracts](./Abstracts) – contém meus resumos e anotações das aulas, abordando desde os fundamentos da computação em nuvem até serviços e ferramentas mais avançadas da AWS.
 
-💻 [Projects](./Projects) – reúne os desafios e projetos desenvolvidos durante o bootcamp, colocando em prática os conceitos aprendidos e explorando soluções reais de cloud computing.
+💻 [Project](./Project) – reúne os desafios e projetos desenvolvidos durante o bootcamp, colocando em prática os conceitos aprendidos e explorando soluções reais de cloud computing.
 
 ---
 
